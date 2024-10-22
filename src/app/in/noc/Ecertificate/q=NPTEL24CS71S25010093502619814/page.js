@@ -4,7 +4,7 @@ export default function Page() {
         <a
          // href="/archive.nptel.ac.in/content/noc/NOC24/SEM1/Ecertificates/107/noc24-cs99/Course"
          //href ="/certificate.pdf"
-         href ="/content/noc/NOC24/SEM2/Ecertificates/107/noc24-cs71/Course/NPTEL24CS71S25010093502619814.pdf"
+         href ="./content/noc/NOC24/SEM2/Ecertificates/107/noc24-cs71/Course/NPTEL24CS71S25010093502619814.pdf"
           target="_blank"
           style={{
             color: 'white',
