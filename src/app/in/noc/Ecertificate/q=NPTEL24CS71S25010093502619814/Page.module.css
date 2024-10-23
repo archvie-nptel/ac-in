@@ -1,0 +1,30 @@
+/* Page.module.css */
+
+.container {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.certificateButton {
+  color: white;
+  background-color: #3070bf;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  display: inline-block;
+  width: 156px;
+  font-size: 16px; /* Desktop default size */
+}
+
+/* For mobile devices (max-width: 768px) */
+@media (max-width: 768px) {
+  .certificateButton {
+    border-radius: 4px;
+    padding: 5px 10px;
+    width: 65px;
+    font-size: 7px; /* Smaller font size for mobile */
+  }
+}
