@@ -4,34 +4,8 @@ import { usePathname } from 'next/navigation';
 export default function NotFound() {
   const pathname = usePathname();
   console.log(pathname);
-  if(!pathname.includes('archive.nptel.ac.in'))
-    return(
-      <div style={{ textAlign: 'center'}}>
-      <h1 style={{
-        fontSize: '2vw', // Responsive font size based on viewport width
-        whiteSpace: 'nowrap', // Ensure the text stays on one line
-        overflow: 'hidden', // Prevent overflow issues
-        textOverflow: 'ellipsis', // Add ellipsis if the text overflows
-      }}>
-      404 - Page Not Found</h1>
-      <p>The page you are looking for does not exist.</p>
-      
-    </div>
-  )
 
-  else if(pathname.includes('/archive.nptel.ac.in/noc/Ecertificate/'))
-    return(
-      <div style={{ textAlign: 'center'}}>
-      <h2 style={{
-        fontSize: '2vw', // Responsive font size based on viewport width
-        whiteSpace: 'nowrap', // Ensure the text stays on one line
-        overflow: 'hidden', // Prevent overflow issues
-        textOverflow: 'ellipsis', // Add ellipsis if the text overflows
-      }}>
-      Sorry you don’t have a Certificate!.Please contact support@nptel.iitm.ac.in.
-      </h2>
-    </div>);
-  else
+  if(!pathname.includes('/in/noc/Ecertificate/'))
   return (
     <div style={{ marginTop: '90px' }}>
       <header></header>
@@ -53,4 +27,18 @@ export default function NotFound() {
       </div>
     </div>
   );
+
+  else (pathname.includes('/archive.nptel.digital/in/noc/Ecertificate/') && !pathname.includes('q=NPTEL24CS71S25010093502619814'))
+    return(
+      <div style={{ textAlign: 'center'}}>
+      <h2 style={{
+        fontSize: '2vw', // Responsive font size based on viewport width
+        whiteSpace: 'nowrap', // Ensure the text stays on one line
+        overflow: 'hidden', // Prevent overflow issues
+        textOverflow: 'ellipsis', // Add ellipsis if the text overflows
+      }}>
+      Sorry you don’t have a Certificate!.Please contact support@nptel.iitm.ac.in.
+      </h2>
+    </div>);
+  
 }
